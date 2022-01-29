@@ -2,6 +2,7 @@ body {
     font-family: 'Mochiy Pop P One', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color:burlywood;
   }
   
   textarea{
@@ -15,7 +16,7 @@ body {
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
+    background-color: #06AED5;
     color: black;
     border-radius: 0;
     border-bottom: 5px solid black;
@@ -38,7 +39,7 @@ body {
   
   
   .hour {
-    background-color: #ffffff;
+    background-color:#06AED5;
     color: #000000;
     border-top: 1px dashed #000000;
   }
