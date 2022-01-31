@@ -10,10 +10,10 @@ function pastPresentFuture() {
     const currentTime = moment().format("HH");
     // console.log(currentTime); -- shows in military time format
 
-// select user input -- id of element using attr()  
+// select user input -- id of element using prop()  
 
     $(".row").map(function() {
-      const  plannerTime = $(this).attr("id");
+      const  plannerTime = $(this).prop("id");
 
     //   console.log(this);  --- (this) refers to the class .row id #08-#17 of each timeblock
 
