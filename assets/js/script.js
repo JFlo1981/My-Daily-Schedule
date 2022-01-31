@@ -5,9 +5,20 @@ $(document).ready(function () {
 let saveBtn = $(".saveBtn");
 
 // appends the variable "date" to the id #currentDay on the index page
+
 const date = moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A")
 $("#currentDay").append(date); 
 
+function setupRefresh()
+{
+    setInterval(refreshBlock,3000);
+}
+setupRefresh()
+
+function refreshBlock()
+{
+   $('#currentDay').html(new moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A"));
+}
 
 function pastPresentFuture() {
 //  var for current time
@@ -52,6 +63,10 @@ $("#14 .input").val(localStorage.getItem("14"));
 $("#15 .input").val(localStorage.getItem("15"));
 $("#16 .input").val(localStorage.getItem("16"));
 $("#17 .input").val(localStorage.getItem("17"));
+
+
+
+
 
 // add call functions to run program
 pastPresentFuture();
