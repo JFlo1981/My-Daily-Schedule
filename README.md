@@ -22,12 +22,12 @@ I began by using a psuedocode of the desired code structure.  A current date and
 The user created data are then saved to local storage via setItem upon the user clicking a save icon which was pulled from Font Awesome.  The same data are then made to persist on the page via getItem.
 
 ## **My Daily Schedule:**
-https://jflo1981.github.io/My-Daily-Schedule/
+[Check it out here!](https://jflo1981.github.io/My-Daily-Schedule/)
 
 [![Daily-Schedule-Screenshot](https://user-images.githubusercontent.com/88595179/151877392-0d0515e6-c745-4e1b-afd2-25437c151c41.png)](https://jflo1981.github.io/My-Daily-Schedule/)
 
 ## **GitHub link:**
-https://github.com/JFlo1981/My-Daily-Schedule
+[Click here to redirect to the repository](https://github.com/JFlo1981/My-Daily-Schedule)
 
 ## **Contributions:**
 * Framework by Xandromus
