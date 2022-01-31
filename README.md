@@ -1,6 +1,6 @@
-# My Daily Schedule
+# **My Daily Schedule**
 
-## Challenge 5:  Create a Daily Schedule to aid in managing time throughout the workday.  The webpage should store the user inputed data in the hour block it was typed in and recall the data after refreshing the webpage or revisiting the site at a later time.
+## **Challenge 5:**  Create a Daily Schedule to aid in managing time throughout the workday.  The webpage should store the user inputed data in the hour block it was typed in and recall the data after refreshing the webpage or revisiting the site at a later time.
 
 ## Built using: 
 * HTML
@@ -21,15 +21,15 @@ I began by using a psuedocode of the desired code structure.  A current date and
 
 The user created data are then saved to local storage via setItem upon the user clicking a save icon which was pulled from Font Awesome.  The same data are then made to persist on the page via getItem.
 
-## My Daily Schedule:
+## **My Daily Schedule:**
 https://jflo1981.github.io/My-Daily-Schedule/
 
-![Daily-Schedule-Screenshot](https://user-images.githubusercontent.com/88595179/151877392-0d0515e6-c745-4e1b-afd2-25437c151c41.png)
+[![Daily-Schedule-Screenshot](https://user-images.githubusercontent.com/88595179/151877392-0d0515e6-c745-4e1b-afd2-25437c151c41.png)](https://jflo1981.github.io/My-Daily-Schedule/)
 
-## GitHub link:
+## **GitHub link:**
 https://github.com/JFlo1981/My-Daily-Schedule
 
-## Contributions:
+## **Contributions:**
 * Framework by Xandromus
 * Initial Psuedocode by Jayme (TA)
 * Working code by Jarod Florence
