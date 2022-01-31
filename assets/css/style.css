@@ -2,8 +2,9 @@ body {
     font-family: 'Mochiy Pop P One', sans-serif;
     font-size: 16px;
     line-height: 1;
-    background-color:burlywood;
+    background-color:lightskyblue;
   }
+
 /* found this to choose placeholder format */
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -39,7 +40,7 @@ body {
   
   .jumbotron {
     text-align: center;
-    background-color: #06AED5;
+    background-color: #9CCCD9;
     color: white;
     border-radius: 0;
     border-bottom: 5px solid black;
@@ -64,7 +65,7 @@ body {
   .hour {
     margin-top: -1px;
     height: 80px;
-    background-color:#06AED5;
+    background-color:#2B3C8A;
     border: 1px solid black;
     border-left: 1px solid black;
     border-top-left-radius: 15px;
@@ -75,17 +76,17 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #E1F0F4;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #4d6cfa;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #7C8DD9;
     color: white;
   }
 
