@@ -7,7 +7,7 @@ let saveBtn = $(".saveBtn");
 // appends the variable "date" to the id #currentDay on the index page
 
 const date = moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A")
-$("#currentDay").append(date); 
+$("#currentDay").html(date); 
 
 function setupRefresh()
 {
