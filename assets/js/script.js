@@ -1,4 +1,6 @@
+// JS runs after index page loads
 $(document).ready(function () {
+
 //  new var to use saveBtn in function below
 let saveBtn = $(".saveBtn");
 

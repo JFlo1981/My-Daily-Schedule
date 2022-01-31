@@ -7,24 +7,6 @@ body {
 
 /* found this to choose placeholder format */
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color:    #fff;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #fff;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #fff;
-}
-
 ::placeholder { /* Most modern browsers support this now. */
    color:    #fff;
 }
@@ -40,7 +22,7 @@ body {
   
   .jumbotron {
     text-align: center;
-    background-color: #9CCCD9;
+    background-color: #85F1FF;
     color: white;
     border-radius: 0;
     border-bottom: 5px solid black;
@@ -76,7 +58,7 @@ body {
   }
   
   .past {
-    background-color: #E1F0F4;
+    background-color: #ADF5FF;
     color: white;
   }
   
