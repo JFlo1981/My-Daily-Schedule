@@ -1,20 +1,23 @@
-const now = moment().format("dddd, MMMM Do, YYYY")
-$("#currentDay").append(now);
+//  new var to use saveBtn in function below
+let saveBtn = $(".saveBtn");
 
-// function to compare curent time to time-blocks for color change
+const date = moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A")
+$("#currentDay").append(date); 
+
 
 function pastPresentFuture() {
-//  need to add code for changing the color of the time-block based on past, presnet & future
 //  var for current time
     const currentTime = moment().format("HH");
-    // console.log(currentTime);
+    // console.log(currentTime); -- shows in military time format
 
-// get id of element  -- found .attr() (at 4am hahahaha)
+// select user input -- id of element using attr()  
 
-    $(".row").map(function(){
-      let  plannerTime = $(this).attr("id");
+    $(".row").map(function() {
+      const  plannerTime = $(this).attr("id");
 
-// compare with if stament and assign proper css (.addClass)
+    //   console.log(this);  --- (this) refers to the class .row id #08-#17 of each timeblock
+
+// compare times with if stament and assign proper css (.addClass)
       if (currentTime > plannerTime) {
         $(this).addClass("past"); 
       } else if (currentTime == plannerTime) {
@@ -22,24 +25,36 @@ function pastPresentFuture() {
       } else {
         $(this).addClass("future");
       }
-
-    });
-
-// var for time-block
-
-
+    //   console.log(this); --- now (this) has the added class past, present or future to the timeblocks based on the outcome of the if else above
+    })
 };
 
-
-// saved user text entry to local storage when saveBtn is clicked
-// key as event, event as value
+// save user text entry to local storage when saveBtn is clicked
 // creat event listener to put this key:value pair into local storage
+saveBtn.on("click", function(){
 
-//  will need a var for the time (.hour) and var for the text (.input)
+    const hour = $(this).siblings(".hour").text(); 
+    const input = $(this).siblings(".input").val(); 
 
+    localStorage.setItem(hour, input);
+    
+});
+// console.log(this); --- now (this) refers to the first and second column respectively within the timeblocks
+// when refreshed grab local storage data (getItem) and display it in the appropriate time block
 
-// when refreshed grab local storage data and display it in the appropriate time block
+function inputPersist() {
 
+    $(".hour").map(function() {
+
+        const savedHour = $(this).text();
+        const savedInput = localStorage.getItem(savedHour);
+
+        if(savedInput !== null) {
+            $(this).siblings(".input").val(savedInput);
+        }
+        // console.log(this);  --- now (this) refers to the first column showing the time (hour)
+    });
+}
 // add call functions to run program
 pastPresentFuture();
-
+inputPersist();

@@ -4,9 +4,10 @@ body {
     line-height: 1;
     background-color:burlywood;
   }
+/* found this to choose placeholder format */
 
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #fff;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #fff;
@@ -27,7 +28,7 @@ body {
    color:    #fff;
 }
   
-  textarea{
+  textarea {
     background: transparent;
     border: none;
     resize: none;
@@ -44,7 +45,7 @@ body {
     border-bottom: 5px solid black;
   }
   
-  .description{
+  .description {
     white-space: pre-wrap;
   }
   
@@ -59,7 +60,7 @@ body {
     border-top: 1px solid white;;
   }
   
-  
+  /* reformatted .hour column to mirror saveBtn */
   .hour {
     margin-top: -1px;
     height: 80px;
@@ -87,7 +88,8 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+
+  /* added formatting to saveBtn */
   .saveBtn {  
     margin-top: -1px;  
     border-top: 1px solid black;
