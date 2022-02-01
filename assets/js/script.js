@@ -12,13 +12,13 @@ $("#currentDay").html(date);
 // will refresh the timestamp every 3 sec
 function setupRefresh() {
     setInterval(refreshBlock,3000);
-}
+};
 
 setupRefresh()
 
 function refreshBlock() {
    $('#currentDay').html(new moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A"));
-}
+};
 
 function pastPresentFuture() {
 //  var for current time
@@ -39,7 +39,7 @@ function pastPresentFuture() {
       } else {
         $(this).addClass("future");
       }
-    })
+    });
 };
 
 // save user text entry to local storage when saveBtn is clicked
