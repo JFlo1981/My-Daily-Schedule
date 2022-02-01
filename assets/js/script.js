@@ -9,14 +9,14 @@ let saveBtn = $(".saveBtn");
 const date = moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A")
 $("#currentDay").html(date); 
 
-function setupRefresh()
-{
+// will refresh the timestamp every 3 sec
+function setupRefresh() {
     setInterval(refreshBlock,3000);
 }
+
 setupRefresh()
 
-function refreshBlock()
-{
+function refreshBlock() {
    $('#currentDay').html(new moment().format("[It is ]dddd, MMMM Do, YYYY <br> <br> [The time is ]h:mm A"));
 }
 
